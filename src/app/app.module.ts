@@ -9,6 +9,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ApiMovieService } from './api-movie.service';
 import { HttpClientModule } from '@angular/common/http';
+import { MovieDisplayComponent } from './movie-display/movie-display.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     MovieListComponent,
     MovieDetailComponent,
     NavigationComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MovieDisplayComponent
   ],
   imports: [
     BrowserModule,
