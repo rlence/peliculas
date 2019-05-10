@@ -24,6 +24,7 @@ validTypes= ['top_rated', 'popular' , 'upcoming']
       
         this.api.getMovies(params.type).subscribe( (res: any) => {
           this.movies = res.results;
+          console.log(res.results)
         });
       }else{
         this.router.navigate( ['/movies/popular'] )

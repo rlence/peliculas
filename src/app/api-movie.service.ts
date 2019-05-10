@@ -11,10 +11,23 @@ export class ApiMovieService {
 
   genereteUrl = ( _type: string ) => this.urlBase + `movie/${_type}?api_key=`+this.key;
 
+  //genereteSimilar = ( _type: string ) => this.urlBase + `movie/${_type}/similar?api_key=`+this.key;
+
   constructor(private http: HttpClient ){}
 
   getMovies( type: string ){
 
     return this.http.get(this.genereteUrl(type))
   }
+
+  getMovie( id: string ){
+
+    return this.http.get( this.genereteUrl(id) )
+  } 
+
+  getSimilarMovie(id: string){
+
+    return this.http.get( this.genereteUrl( id + '/similar' ))
+  }
+  
 }
