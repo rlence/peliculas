@@ -1,3 +1,9 @@
+#Demo
+
+proyecto realizado en angular con un api-rest de una pagina de peliculas 
+
+ver demo: https://rlence.github.io/peliculas/
+
 # AngularMovie
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
